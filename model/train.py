@@ -1,11 +1,14 @@
 import pandas as pd
+import os
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.preprocessing import LabelEncoder
 import joblib
 
 # Load the dataset
-data = pd.read_csv(r"C:\ml-ci-cd-churn_dataset\data\dataset_churn.csv")
+base_dir = "C:/ml-ci-cd-churn_dataset"
+file_path = os.path.join(base_dir, "data", "dataset_churn.csv")
+data = pd.read_csv(file_path)
 
 # Preprocessing
 data.drop('customerID', axis=1, inplace=True)
