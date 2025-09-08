@@ -6,9 +6,9 @@ from sklearn.preprocessing import LabelEncoder
 import joblib
 
 # Load the dataset
-base_dir = "C:/ml-ci-cd-churn_dataset"
-file_path = os.path.join(base_dir, "data", "dataset_churn.csv")
-data = pd.read_csv(file_path)
+BASE_DIR = os.path.dirname(os.path.dirname(__file__))  # go one level up
+data_path = os.path.join(BASE_DIR, 'data', 'dataset_churn.csv')
+data = pd.read_csv(data_path)
 
 # Preprocessing
 data.drop('customerID', axis=1, inplace=True)
