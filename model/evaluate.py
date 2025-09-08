@@ -31,7 +31,7 @@ y = data["Churn"]
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
 # Load the saved model
-model = joblib.load("model/churn_model.pkl")
+model = joblib.load("churn_model.pkl")
 
 # Make predictions
 y_pred = model.predict(X_test)
