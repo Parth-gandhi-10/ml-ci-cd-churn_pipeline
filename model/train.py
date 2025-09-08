@@ -32,4 +32,4 @@ model = RandomForestClassifier(n_estimators=100, random_state=42)
 model.fit(X_train, y_train)
 
 # Save model
-joblib.dump(model, 'model/churn_model.pkl')
+joblib.dump(model, 'churn_model.pkl')
