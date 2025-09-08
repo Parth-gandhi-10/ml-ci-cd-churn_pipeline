@@ -3,6 +3,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score, classification_report
 from sklearn.preprocessing import LabelEncoder
 import joblib
+import os
 
 # Load the dataset
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))  # go one level up
