@@ -7,7 +7,7 @@ import joblib
 
 # Load the dataset
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))  # go one level up
-data_path = os.path.join(BASE_DIR, 'data', 'dataset_churn.csv')
+data_path = os.path.join(BASE_DIR, 'data', 'churn.csv')
 data = pd.read_csv(data_path)
 
 # Preprocessing
