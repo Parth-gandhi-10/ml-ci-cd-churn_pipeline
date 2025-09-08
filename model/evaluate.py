@@ -5,7 +5,10 @@ from sklearn.preprocessing import LabelEncoder
 import joblib
 
 # Load the dataset
-data = pd.read_csv('data/WA_Fn-UseC_-Telco-Customer-Churn.csv')
+BASE_DIR = os.path.dirname(os.path.dirname(__file__))  # go one level up
+data_path = os.path.join(BASE_DIR, 'data', 'churn.csv')
+# Load the dataset
+data = pd.read_csv(data_path)
 
 # Drop customerID (not useful for prediction)
 data = data.drop("customerID", axis=1)
