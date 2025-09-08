@@ -6,7 +6,7 @@ from sklearn.preprocessing import LabelEncoder
 import joblib
 
 # Load the dataset
-base_dir = r"C:\ml-ci-cd-churn_dataset"
+base_dir = "C:/ml-ci-cd-churn_dataset"
 file_path = os.path.join(base_dir, "data", "dataset_churn.csv")
 data = pd.read_csv(file_path)
 
